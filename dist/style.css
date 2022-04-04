@@ -1,0 +1,89 @@
+:root {
+  --primary-dark: #ef4444;
+  --primary-light: #f5f5f4;
+  --content-background: #fafafa;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 0.75fr 3fr;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 0 1.5em;
+  grid-column: 1/3;
+  background-color: var(--primary-dark);
+}
+
+header h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.5rem;
+}
+
+nav {
+  padding: 1.5em;
+  grid-row: 2/3;
+  background-color: var(--primary-light);
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-button,
+.project-add-btn {
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  text-align: left;
+  padding: 1em;
+  width: 100%;
+}
+
+.nav-button:hover,
+.project-add-btn:hover {
+  background-color: #e7e5e4;
+  border-radius: 5px;
+}
+
+.nav-button:focus {
+  font-weight: bold;
+  background-color: #e7e5e4;
+  border-radius: 5px;
+}
+
+#content {
+  background-color: var(--content-background);
+}
+
+footer {
+  background-color: var(--primary-dark);
+  grid-column: 1/3;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--content-background);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
